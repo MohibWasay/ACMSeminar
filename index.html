@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/stylesheet.css" />
     <script src="js/script.js"></script>
     <script src="js/appData.js"></script>
+
 </head>
 <body>
 <main>
@@ -34,55 +35,25 @@
     <section id="shop">
     <aside>
         <div class="shop-category">
-            <div id="nav-appliances" class="cart-div active1" onclick="tabChange('nav-appliances')">Appliances</div>
-            <div id='nav-cell-phones' class="cart-div" onclick="tabChange('nav-cell-phones')">Cell Phones</div>
-            <div id='nav-cameras' class="cart-div" onclick="tabChange('nav-cameras')">Cameras</div>
-            <div id='nav-video-games' class="cart-div" onclick="tabChange('nav-video-games')">Video Games</div>
-            <div id='nav-wearable-tech' class="cart-div" onclick="tabChange('nav-wearable-tech')">Wearable Tech</div>
+            <div id="nav-appliances" class="cart-div" onclick="AppModule.tabChange('nav-appliances')">Appliances</div>
+            <div id='nav-cell-phones' class="cart-div"onclick="AppModule.tabChange('nav-cell-phones')">Cell Phones</div>
+            <div id='nav-cameras' class="cart-div" onclick="AppModule.tabChange('nav-cameras')">Cameras</div>
+            <div id='nav-video-games' class="cart-div"onclick="AppModule.tabChange('nav-video-games')">Video Games</div>
+            <div id='nav-wearable-tech' class="cart-div" onclick="AppModule.tabChange('nav-wearable-tech')">Wearable Tech</div>
         </div>
         <div style="height: 1%;" class="random"></div>
-        <div class="shop-items">
-            <div>
-                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
-                <span>Lorem Ipsum</span>
-                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
-            </div>
-            <div>
-                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
-                <span>Lorem Ipsum</span>
-                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
-            </div>
-            <div>
-                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
-                <span>Lorem Ipsum</span>
-                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
-            </div>
-            <div>
-                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
-                <span>Lorem Ipsum</span>
-                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
-            </div>
-            <div>
-                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
-                <span>Lorem Ipsum</span>
-                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
-            </div>
+        <div id="cart" class="shop-items">
         </div>
         <div class="random">
             <div>
-                <button>Empty Cart</button>
+                <button onclick="clearCart('cart')">Empty Cart</button>
                 <button>Cash Out</button>
             </div>
         </div>
     </aside>
     <article>
-        <div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
-            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+        <div id="main-body">
+
         </div>
     </article>
     </section>
@@ -98,6 +69,15 @@
         <div style="display:inline-block;padding: 10px 5px 5px 10px; color: #ccc; ">Copyrights &copy; All Rights Reserved</div>
         <div style="display:inline-block;float: right; padding: 10px 15px 5px 10px; color: #ccc; ">Presented by <a style="color: white;" href="https://github.com/MohibWasay">Mohib Abdul Wasay</a> & <a style="color: white;" href="https://github.com/ShahnawazAli93">Shahnawaz Ali</a></div>
     </footer>
+    <script>
+        function clearCart(elementID){
+            document.getElementById(elementID).innerHTML = "";
+        }
+        function addOrRemoveItem(item) {
+            var myCart = document.getElementById('cart');
+            myCart.innerHTML += "<div><img src='data/shopping_bag.jpg' width='40px' height='40px' /><span>" + this.name + "</span><span style='vertical-align:12px; font-size: 1.5em; color: #ccc;'>$ " + this.price + "</span></div>";
+        }
+    </script>
 </main>
 </body>
 </html>
