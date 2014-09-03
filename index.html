@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACM Workshop Shopping Cart</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <script src="js/script.js"></script>
+    <script src="js/appData.js"></script>
+</head>
+<body>
+<main>
+    <header class="header">
+        <div style="margin-bottom: 10px;">
+            <span class="logo">Sooper<span>Shop</span><span style="margin-left: 10px; font-size: 0.5em; color: whitesmoke; text-transform: none; font-weight: normal; margin-bottom: 3px;">This is how You Should've done it</span></span>
+            <ul class="top-nav-bar">
+                <li><a href="#">My Account</a>|</li>
+                <li><a href="#">My Wishlist</a>|</li>
+                <li><a href="#">My Cart</a>|</li>
+                <li><a href="#">Checkout</a>|</li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li class="active"><a>home</a></li>
+                <li><a>careers</a></li>
+                <li><a>about us</a></li>
+                <li><a>services</a></li>
+                <li><a>contact</a></li>
+            </ul>
+            <div class="navbar-beneath">
+            </div>
+        </div>
+    </header>
+    <section id="shop">
+    <aside>
+        <div class="shop-category">
+            <div id="nav-appliances" class="cart-div active1" onclick="tabChange('nav-appliances')">Appliances</div>
+            <div id='nav-cell-phones' class="cart-div" onclick="tabChange('nav-cell-phones')">Cell Phones</div>
+            <div id='nav-cameras' class="cart-div" onclick="tabChange('nav-cameras')">Cameras</div>
+            <div id='nav-video-games' class="cart-div" onclick="tabChange('nav-video-games')">Video Games</div>
+            <div id='nav-wearable-tech' class="cart-div" onclick="tabChange('nav-wearable-tech')">Wearable Tech</div>
+        </div>
+        <div style="height: 1%;" class="random"></div>
+        <div class="shop-items">
+            <div>
+                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
+                <span>Lorem Ipsum</span>
+                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
+            </div>
+            <div>
+                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
+                <span>Lorem Ipsum</span>
+                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
+            </div>
+            <div>
+                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
+                <span>Lorem Ipsum</span>
+                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
+            </div>
+            <div>
+                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
+                <span>Lorem Ipsum</span>
+                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
+            </div>
+            <div>
+                <img src="data/shopping_bag.jpg" width="40px" height="40px" />
+                <span>Lorem Ipsum</span>
+                <span style="vertical-align:12px; font-size: 1.5em; color: #ccc;">$25</span>
+            </div>
+        </div>
+        <div class="random">
+            <div>
+                <button>Empty Cart</button>
+                <button>Cash Out</button>
+            </div>
+        </div>
+    </aside>
+    <article>
+        <div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+            <div><img src="data/shopping_bag.jpg" /><button class="add-to-cart">Add to Cart</button></div>
+        </div>
+    </article>
+    </section>
+    <section id="uploads">
+        <div class="heading">New Uploads</div>
+        <div class="new-upload"><img src="data/shopping_bag.jpg" /></div>
+        <div class="new-upload"><img src="data/shopping_bag.jpg" /></div>
+        <div class="new-upload"><img src="data/shopping_bag.jpg" /></div>
+        <div class="new-upload"><img src="data/shopping_bag.jpg" /></div>
+        <div class="new-upload"><img src="data/shopping_bag.jpg" /></div>
+    </section>
+    <footer>
+        <div style="display:inline-block;padding: 10px 5px 5px 10px; color: #ccc; ">Copyrights &copy; All Rights Reserved</div>
+        <div style="display:inline-block;float: right; padding: 10px 15px 5px 10px; color: #ccc; ">Presented by <a style="color: white;" href="https://github.com/MohibWasay">Mohib Abdul Wasay</a> & <a style="color: white;" href="https://github.com/ShahnawazAli93">Shahnawaz Ali</a></div>
+    </footer>
+</main>
+</body>
+</html>
