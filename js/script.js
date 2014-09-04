@@ -57,8 +57,12 @@ var AppModule = {
                 break;
         }
         dataToAdd.forEach(function(item){
-            mainBody.innerHTML += "<div id='"+ item.id + "'><img src='data/shopping_bag.jpg' /><div style='height: 20px;' >"+ item.name +"</div><button onclick='addOrRemoveItem("+this.item +")' class='add-to-cart'>Add to Cart</button></div>";
-
+            var myCart = document.getElementById('cart');
+            mainBody.innerHTML += "<div id='"+ item.id + "'><img src='data/shopping_bag.jpg' /><div style='height: 20px;' >"+ item.name +"</div><button id='button"+ item.id +"' class='add-to-cart'>Add to Cart</button></div>";
+            var x = document.getElementById('button' +item.id);
+            x.onclick = function() {
+                myCart.innerHTML += "<div><img src='data/shopping_bag.jpg' width='40px' height='40px' /><span>" + item.name + "</span><span style='vertical-align:12px; font-size: 1.25em; color: #ccc;'>$" + item.price + "</span></div>";
+            };
             if(AppModule.selectedItems.indexOf(item.id)!=-1){
                 document.getElementById(item.id).className+=" item-selected";
             }

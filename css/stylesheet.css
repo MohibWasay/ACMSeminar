@@ -176,13 +176,13 @@ aside {
 }
 
 .shop-items div {
-    padding: 15px 0 0 15px;
+    padding: 10px 0 0 8px;
 }
 
 .shop-items div span {
     padding-left: 10px;
     color: white;
-    font-size: 1.25em;
+    font-size: 0.75em;
     vertical-align: 15px;
 }
 .random {
