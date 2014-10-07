@@ -5,7 +5,7 @@
 AppModule.data = {
     appliances:[
         {id:"a1",name:"Washers & Dryers",imgUrl:"img/shopping_bag.jpg",price:55},
-        {id:"a2",name:"Refrigrators",imgUrl:"img/shopping_bag.jpg",price:13},
+        {id:"a2",name:"Refrigerators",imgUrl:"img/shopping_bag.jpg",price:13},
         {id:"a3",name:"Microwave",imgUrl:"img/shopping_bag.jpg",price:2},
         {id:"a4",name:"Vacuums & Floorcare",imgUrl:"img/shopping_bag.jpg",price:15},
         {id:"a5",name:"Iron, Steamers & Presses",imgUrl:"img/shopping_bag.jpg",price:54}
